@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>SET - Jacsó Ádám Zoltán [GWJIAO]</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="title"><h1>SET játék</h1></div>
+  <div id="settings">
+  <div id="gamerules"><button id="rules" onclick="location.href='https://fejlesztojatekvilag.hu/uploaded/set_magyar_szabaly.pdf'">Játékszabály</button></div>
+  <div id="numberofplayers"><h2>Játékosok száma</h2>
+  <input id="no_players_input" type="number" min="1" max ="10" value=1><br><br>
+  <div id="addplayers">
+  <input id="player1" type="text" value="Jatekos1"><br>
+  </div>
+  </div>
+  <div id="modes"><h2>Játékmódok</h2>
+  <input type="radio" id="practice" name="modes" value="practice" checked>
+  <label>Gyakorló</label><br>
+  <input type="radio" id="race" name="modes" value="race">
+  <label>Verseny</label>
+
+  </div>
+
+  <div id="difficulties"><h2>Nehézség</h2>
+  <input type="radio" id="easy" name="difficulties" value="easy" >
+  <label>Kezdő</label><br>
+  <input type="radio" id="hard" name="difficulties" value="hard" checked>
+  <label>Haladó</label>
+  </div>
+
+  <div id="options"><h2>Egyéb beállítások</h2>
+  <input type="checkbox" id="isthereset_checkbox">"Van-e SET?" gomb<br>
+  <input type="checkbox" id="whereistheset_checkbox">"SET-et mutat" gomb<br>
+  <input type="checkbox" id="extra3cards_checkbox">Plusz 3 lap manuálisan<br> 
+  </div><br>
+  <div id="startofgame"><button id="startgame">START</button></div>
+
+  </div>
+
+  <div id="game" hidden>
+  <div id="backtomenu"><button id="backmenu">Vissza a menübe</button></div>
+
+  <div id ="tableofcards">
+
+
+    <table id="allcards">
+
+    </table>
+  </div>
+
+  <div id="setornot"><h2></h2></div>
+  </div>
+
+  <div id="sider" class="sidenav" hidden>
+  <div><h2>Pakli</h2></div>
+  <div id="no_cards_deck">
+
+  </div>
+  <div><h2>Pontok</h2></div>
+  <div id="scoreboard">
+
+  </div>
+  <div id="countdown"><h2>10 mp</h2></div><br>
+  <div id="isthereset"><button id="isthereset_btn">Van SET?</button></div><br>
+  <div id="whereistheset"><button id="whereistheset_btn">Hol van SET?</button></div><br>
+  <div id="extra3cards"><button id="extra3cards_btn">Plusz 3 lap</button></div>
+  <div id="timeofgame"><h2>00:00</h2></div>
+  </div>
+
+
+  <script src="game.js"></script>
+</body>
